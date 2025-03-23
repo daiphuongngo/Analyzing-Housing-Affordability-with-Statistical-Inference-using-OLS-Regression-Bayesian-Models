@@ -39,3 +39,9 @@ The data comes directly from Kaggle with two sets: training and testing. I will 
 https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
 
 
+# Project Proposal
+
+The project I would like to work on for this course is the continuation on the House Prices - Advaced Regression Techniques from Kaggle. Serveral years ago I started exploring my basic skills in EDA, Machine Learning and Deep Learning and visualization with this dataset. However, as I'd like to move upward to become Data Scientist in the near future, applying what have been taught in the Master's classes in terms of diagnostics, inferences and sampling techniques for this project to analyze factors contributing to housing affordability. As I have joined a new company recently in the banking industry of mortgage, analyzing data related to housing is crucial, especially in terms of Risk and Mortgage Product as well as Marketing. However, finding a good enough data like this Kaggle's one for the Canadian market is a challenge as I have been finding one from Government of Canada or private sources but the governmental data seems to be very condensed, scattered and hard to merge or union. Canadian housing affordability has experiencing many challenges due to different factors, such as immigration, shortage of jobs, unemployment rate, consumer behavior, interest rate, etc... so it might be similar to or different from the US. Finding or concatenating more data with more features is very time-consuming and a lot of effort. Therefore, I circle back to this data from Kaggle as a reliable dataset with adequate features as a starting point to dive deeper into more descriptive, diagnostic, sampling, inferences, regression and Bayesian model applications learned from this course.
+
+
+
