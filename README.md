@@ -47,7 +47,7 @@ The project I would like to work on for this course is the continuation on the H
 
 My project involves analyzing housing affordability using Bayesian hierarchical and unpooled models. Key features such as neighborhood attributes, numerical housing characteristics, such as bedrooms, lot sizes, and categorical factors, such as building type, house style, were included.
 
-Data Preparation:
+**Data Preparation**:
 
 I processed and standardized numerical features as well as converted categorical variables into one-hot or binary numerical formats. I also removed missing values to ensure data integrity.
 
@@ -59,19 +59,19 @@ Built an OLS model as a baseline for analyzing housing price determinants. Key f
 
 I developed Hierarchical Models with group-level effects (neighborhoods) using Laplace priors for interpretability in intercepts and coefficients. I also built an Unpooled Model for fully independent parameter estimation as well as a Pooled Model for independent parameter estimation regardless of neighborhood, and compared results using trace plots, posterior summaries and posterior predictive checks.
 
-Correlation Analysis:
+**Correlation Analysis**:
 
 I examined relationships between key numerical features using Spearman and Pearson correlation matrices to identify significant predictors and features with multicollinearity for complexity reduction.
 
-Insights:
+**Insights**:
 
 Hierarchical models revealed varying neighborhood-level affordability trends. Unpooled models highlighted independent effects of specific features, like GarageCars and TotalBath, on housing affordability. Categorical variables such as BldgType and HouseStyle demonstrated significant predictive power.
 
-Statistical Inference:
+**Statistical Inference**:
 
 Posterior distributions provided credible intervals for coefficients, aiding decision-making. Insights support identifying key drivers of affordability and potential areas for policy intervention.
 
-Impact:
+**Impact**:
 
 My analysis offers a robust framework for housing market insights, combining OLS regression for interpretability and Bayesian techniques for flexibility and precision. It supports policymakers and stakeholders in understanding affordability drivers at both micro and macro levels. When new data and information are provided to embed with the past data, the posterior insights from my current Bayesian models can be used as prior information or beliefs for the new Bayesian models fitted with a combination of old and new data to update posterior insights.
 
