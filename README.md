@@ -39,9 +39,69 @@ The data comes directly from Kaggle with two sets: training and testing. I will 
 https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
 
 
-# Project Proposal
+# **Project Proposal**
 
 The project I would like to work on for this course is the continuation on the House Prices - Advaced Regression Techniques from Kaggle. Serveral years ago I started exploring my basic skills in EDA, Machine Learning and Deep Learning and visualization with this dataset. However, as I'd like to move upward to become Data Scientist in the near future, applying what have been taught in the Master's classes in terms of diagnostics, inferences and sampling techniques for this project to analyze factors contributing to housing affordability. As I have joined a new company recently in the banking industry of mortgage, analyzing data related to housing is crucial, especially in terms of Risk and Mortgage Product as well as Marketing. However, finding a good enough data like this Kaggle's one for the Canadian market is a challenge as I have been finding one from Government of Canada or private sources but the governmental data seems to be very condensed, scattered and hard to merge or union. Canadian housing affordability has experiencing many challenges due to different factors, such as immigration, shortage of jobs, unemployment rate, consumer behavior, interest rate, etc... so it might be similar to or different from the US. Finding or concatenating more data with more features is very time-consuming and a lot of effort. Therefore, I circle back to this data from Kaggle as a reliable dataset with adequate features as a starting point to dive deeper into more descriptive, diagnostic, sampling, inferences, regression and Bayesian model applications learned from this course.
 
+# **Final Summary**
 
+My project involves analyzing housing affordability using Bayesian hierarchical and unpooled models. Key features such as neighborhood attributes, numerical housing characteristics, such as bedrooms, lot sizes, and categorical factors, such as building type, house style, were included.
+
+Data Preparation:
+
+I processed and standardized numerical features as well as converted categorical variables into one-hot or binary numerical formats. I also removed missing values to ensure data integrity.
+
+**OLS Regression**:
+
+Built an OLS model as a baseline for analyzing housing price determinants. Key findings from OLS are that GarageCars and TotalBath were significant positive predictors of housing prices. Neighborhoods and categorical features such as BldgType and HouseStyle had a meaningful impact on affordability. Limitations identified with OLS are that it assumes homoscedasticity and independent errors, which may not capture hierarchical dependencies, such as neighborhoods.
+
+**Bayesian Modeling**:
+
+I developed Hierarchical Models with group-level effects (neighborhoods) using Laplace priors for interpretability in intercepts and coefficients. I also built an Unpooled Model for fully independent parameter estimation as well as a Pooled Model for independent parameter estimation regardless of neighborhood, and compared results using trace plots, posterior summaries and posterior predictive checks.
+
+Correlation Analysis:
+
+I examined relationships between key numerical features using Spearman and Pearson correlation matrices to identify significant predictors and features with multicollinearity for complexity reduction.
+
+Insights:
+
+Hierarchical models revealed varying neighborhood-level affordability trends. Unpooled models highlighted independent effects of specific features, like GarageCars and TotalBath, on housing affordability. Categorical variables such as BldgType and HouseStyle demonstrated significant predictive power.
+
+Statistical Inference:
+
+Posterior distributions provided credible intervals for coefficients, aiding decision-making. Insights support identifying key drivers of affordability and potential areas for policy intervention.
+
+Impact:
+
+My analysis offers a robust framework for housing market insights, combining OLS regression for interpretability and Bayesian techniques for flexibility and precision. It supports policymakers and stakeholders in understanding affordability drivers at both micro and macro levels. When new data and information are provided to embed with the past data, the posterior insights from my current Bayesian models can be used as prior information or beliefs for the new Bayesian models fitted with a combination of old and new data to update posterior insights.
+
+# **Further Improvement**
+
+Further Bayesian analysis applied time series data to analyze switchpoint of Economic crisis from Dec 2007 - June 2009 impacting the target and housing affordability and tracking how an event or policy can affect the trend based on causal inference. This modelling would require more sophisticated techniques handling factors contributing to priors, switchpoint and posteriors. Time series data often exhibit structural breaks or regime changes, such as sudden changes in trends so standard Bayesian models may fail to adapt to these changes. Also, choosing appropriate priors is critical but non-trivial, especially in high-dimensional time series datasets because poorly chosen priors can lead to biased or unstable posterior estimates. Therefore, in my current project, I have not extended to conduct more research on this analysis.
+
+# **References**
+
+Diagnosing Biased Inference with Divergences
+
+PyMC Team. "Diagnosing Biased Inference with Divergences." PyMC Examples: Diagnostics and Criticism. Link at: https://www.pymc.io/projects/examples/en/latest/diagnostics_and_criticism/Diagnosing_biased_Inference_with_Divergences.html
+
+Hierarchical Modeling with Variational Inference
+
+PyMC Team. "Hierarchical GLM with ADVI and Minibatch." PyMC Examples: Variational Inference. Link at: https://www.pymc.io/projects/examples/en/latest/variational_inference/GLM-hierarchical-advi-minibatch.html
+
+Rugby Analytics with Bayesian Hierarchical Models
+
+PyMC Team. "Bayesian Hierarchical Models in Rugby Analytics." PyMC Examples: Case Studies. Link at: https://www.pymc.io/projects/examples/en/latest/case_studies/rugby_analytics.html
+
+Hierarchical Binomial Model with PyMC
+
+PyMC Team. "GLM: Hierarchical Binomial Model." PyMC Examples: Generalized Linear Models. Link at: https://www.pymc.io/projects/examples/en/latest/generalized_linear_models/GLM-hierarchical-binomial-model.html
+
+Hierarchical Partial Pooling
+
+PyMC Team. "Hierarchical Partial Pooling: A Case Study." PyMC Examples: Case Studies. Link at: https://www.pymc.io/projects/examples/en/latest/case_studies/hierarchical_partial_pooling.html
+
+Bambi: A High-Level Bayesian Modeling Interface
+
+Bambi Developers. Bambi: Bayesian Models Made Easy. Link at: https://bambinos.github.io/bambi/
 
