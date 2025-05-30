@@ -51,25 +51,100 @@ My project involves analyzing housing affordability using Bayesian hierarchical 
 
 I processed and standardized numerical features as well as converted categorical variables into one-hot or binary numerical formats. I also removed missing values to ensure data integrity.
 
+![Final - Temp Histgram and QQ after Transformation and Scaling](https://github.com/user-attachments/assets/76ebebfb-71f5-4f15-80dc-6ff6bf41f09a)
+
+![Final - Temp Histgram and QQ after Transformation](https://github.com/user-attachments/assets/4279b82c-b37f-400c-ae1f-2772303dfc01)
+
+![Final - Histogram before Transformation](https://github.com/user-attachments/assets/3357e2d3-86b0-4aa9-a7cc-da9acde1cd5b)
+
+![Final Project - Violin Plot before Log Transformation 2](https://github.com/user-attachments/assets/ddcec343-6d17-415d-9b72-3351bec42512)
+
 **OLS Regression**:
 
 Built an OLS model as a baseline for analyzing housing price determinants. Key findings from OLS are that GarageCars and TotalBath were significant positive predictors of housing prices. Neighborhoods and categorical features such as BldgType and HouseStyle had a meaningful impact on affordability. Limitations identified with OLS are that it assumes homoscedasticity and independent errors, which may not capture hierarchical dependencies, such as neighborhoods.
 
+![Optimal Alpha plot](https://github.com/user-attachments/assets/7af96721-d605-41c3-b037-71e82d34057c)
+
+![Model 6 Plot](https://github.com/user-attachments/assets/691d036c-4773-46cb-adbb-84b28f191a29)
+
+![lmplot after log transformation](https://github.com/user-attachments/assets/c00dfd54-7634-4a0a-9c95-b003c63b0765)
+
+![Violin Plot](https://github.com/user-attachments/assets/4c2449ec-450b-4a43-bb71-34945939b636)
+
+![Correlation Matrix](https://github.com/user-attachments/assets/d8060da3-a337-4fb6-9d0d-35a7c09e60ec)
+
+
 **Bayesian Modeling**:
 
+![Bayesian MCMC 94 percent HDI](https://github.com/user-attachments/assets/f79c1a3b-1f39-49f2-b09a-065c72450c50)
+
+![Model 5 Plot](https://github.com/user-attachments/assets/8f9b4e61-89ad-4000-9785-d27ab91871d1)
+
+![Bayesian Change Point Detection in Housing Prices](https://github.com/user-attachments/assets/c1ad6eb0-4c50-41ce-b5c5-4626be252724)
+
 I developed Hierarchical Models with group-level effects (neighborhoods) using Laplace priors for interpretability in intercepts and coefficients. I also built an Unpooled Model for fully independent parameter estimation as well as a Pooled Model for independent parameter estimation regardless of neighborhood, and compared results using trace plots, posterior summaries and posterior predictive checks.
+
+![ElasticNet Coefficients 2](https://github.com/user-attachments/assets/4bee77b2-8c86-4770-baef-2dbb9655f5ea)
+
+![Bootstrap Distribution BedroomAbvGr](https://github.com/user-attachments/assets/6ac1656e-eef2-4a76-9dab-3bf2bfeacc60)
+
+![Optimal Alpha plot 2](https://github.com/user-attachments/assets/4295ab80-97dd-4b0b-b513-3a2ed893edb0)
+
+![Compare 3 models plot 3](https://github.com/user-attachments/assets/84f99452-b85d-4362-a522-8bdc446c2a6f)
+
+![Compare 2 models plot 1](https://github.com/user-attachments/assets/e62d3ee7-94c6-482d-a37f-822ad3fc169a)
+
+![Compare 2 models plot 3](https://github.com/user-attachments/assets/49f9db1e-20ef-4343-9552-a08b3da2f0c5)
+
+![Unpooled Model plot 1](https://github.com/user-attachments/assets/acfcbc56-2d9a-4edd-a202-ba3e1d8defe8)
+
+![Unpooled Model plot 2](https://github.com/user-attachments/assets/63217b1a-2564-4924-9de9-e5441ec6574f)
+
+![Pooled Model plot 1](https://github.com/user-attachments/assets/e9e04d66-6a00-4b28-9db3-e2eb1ecf324b)
+
+![Pooled Model plot 2](https://github.com/user-attachments/assets/4077f046-9e83-4cc8-9c7f-6fb4ab8297fe)
+
+![Hierachical model plot 1](https://github.com/user-attachments/assets/deb12a93-e9a2-4fa2-80f4-589cde82314f)
+
+![Hierachical model plot 2](https://github.com/user-attachments/assets/422c65ba-5b63-4248-afac-832790e1571c)
+
+![Bayesian MCMC plot 1](https://github.com/user-attachments/assets/64d6dead-45e1-44ea-95f1-b753da491f1a)
+
+![Bayesian MCMC plot 2](https://github.com/user-attachments/assets/5d1233f6-a8d5-43c1-905b-43904f188a41)
+
+![Bayesian MCMC plot 3](https://github.com/user-attachments/assets/8fa4a0db-8a7c-4c37-90a0-197acbf5664f)
+
+![Bayesian MCMC plot 4](https://github.com/user-attachments/assets/2c3cff80-8fa2-429e-bac8-91213996057c)
+
+![Distribution sof Parameters Beta0 and Beta1 between Unpooled and HIerachical models](https://github.com/user-attachments/assets/b232d9d0-920b-48e6-88ca-1dfe587d6c36)
+
+![Posterior Predictive and Bayesian P Value Checks](https://github.com/user-attachments/assets/e6a0b8a7-0e49-470b-a79a-d855225cbe5f)
+
+![3 models comparison using LOO](https://github.com/user-attachments/assets/9473427a-95cc-4266-a461-0aed6dc2434f)
 
 **Correlation Analysis**:
 
 I examined relationships between key numerical features using Spearman and Pearson correlation matrices to identify significant predictors and features with multicollinearity for complexity reduction.
 
+![Matrices](https://github.com/user-attachments/assets/db91dcf6-4311-4a54-b3f5-7cb20f67440d)
+
+![Corr Matrix](https://github.com/user-attachments/assets/1802d72d-fd59-4a54-947d-6ae0e2246f3a)
+
 **Insights**:
 
 Hierarchical models revealed varying neighborhood-level affordability trends. Unpooled models highlighted independent effects of specific features, like GarageCars and TotalBath, on housing affordability. Categorical variables such as BldgType and HouseStyle demonstrated significant predictive power.
 
+![Hierachical Model 1st plot](https://github.com/user-attachments/assets/90952569-c168-4fcd-9984-c988a5bdfe2e)
+
+![Hierachical Model 2nd plot](https://github.com/user-attachments/assets/a846da55-56da-45ba-9ab5-a7429bc530b8)
+
 **Statistical Inference**:
 
 Posterior distributions provided credible intervals for coefficients, aiding decision-making. Insights support identifying key drivers of affordability and potential areas for policy intervention.
+
+![Posterior Check](https://github.com/user-attachments/assets/dbb70bca-85a9-4574-8629-e3c18635b915)
+
+![Distributions](https://github.com/user-attachments/assets/2a2273cf-a614-4281-b10e-7293a02c884a)
 
 **Impact**:
 
